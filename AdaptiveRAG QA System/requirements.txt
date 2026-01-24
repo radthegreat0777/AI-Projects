@@ -1,0 +1,10 @@
+langchain-community
+langchain-core
+langchain-openai 
+langgraph
+pydantic 
+python-dotenv 
+semantic-chunkers 
+semantic-router 
+tavily-python
+langchain_text_splitters
