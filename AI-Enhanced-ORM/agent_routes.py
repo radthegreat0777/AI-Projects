@@ -44,7 +44,7 @@ async def propose_dml_statement(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=str(e)
         )
-@router.post("dml/approve", response_model=DMLApprovalResponse)
+@router.post("/dml/approve", response_model=DMLApprovalResponse)
 async def approve_dml(request: DMLApprovalRequest, session:AsyncSession = Depends(get_db)):
     try:
         result = await approve_and_execute(approval_id=request.approval_id,

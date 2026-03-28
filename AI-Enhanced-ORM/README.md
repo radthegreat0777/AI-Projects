@@ -187,15 +187,6 @@ This ensures **no DML statement is ever executed without human review**, regardl
 
 ---
 
-## Notes & Known Issues
-
-- The `user_routes.py` `create_user` endpoint has a missing `await` on `repo.get_user_by_email()` — this should be awaited to correctly check for duplicate emails.
-- The `agent_routes.py` `approve_dml` route is missing the leading `/` in the path (`"dml/approve"` should be `"/dml/approve"`).
-- `database_config.py` uses a hardcoded connection string — move credentials to environment variables before deploying.
-- The agent is restricted to **SELECT only** queries. DML goes through the separate proposal/approval flow.
-
----
-
 ## Future Improvements
 
 - Add authentication (e.g., JWT) to protect agent and admin routes
