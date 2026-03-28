@@ -92,7 +92,7 @@ A **FastAPI** backend that combines SQLAlchemy async ORM with an AI-powered natu
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/ai-enhanced-orm.git
+git clone https://github.com/radthegreat0777/AI-Projects/tree/main/AI-Enhanced-ORM
 cd ai-enhanced-orm
 
 # Create and activate a virtual environment
