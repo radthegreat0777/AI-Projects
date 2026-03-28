@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy==2.0.46
+pydantic
+python-dotenv
+asyncpg
+greenlet
+langchain-community
+langgraph
+langchain-openai
+langchain
+gradio
+psycopg2
